@@ -1,0 +1,50 @@
+.bg_black{
+    background-color: #000;
+}
+.clr_white{
+    color: #FFFFFF;
+}
+.top_sec{
+    padding: 200px 80px;
+    text-align: end;
+    font-size: 50px;
+}
+.service_sec{
+    padding: 50px 80px;
+    font-size: 50px;
+}
+.service_sec_box{
+    width: 100%;
+    padding: 20px 0px;
+    display: flex;    
+}
+.service_content{
+    width: 70%;
+}
+.service_img{
+    width: 30%;
+    aspect-ratio: 1/1;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+}
+.curved-line {
+    width: 200px;
+    height: 100px;
+    border: 2px dotted rgb(246, 245, 245);
+    border-radius: 50%; /* creates the curve */
+    border-top: none;
+    border-right: none;
+    position: relative;
+  }
+  
+  /* Add an arrow using a pseudo-element */
+  .curved-line::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    border: 5px solid transparent;
+    border-left-color: rgb(247, 242, 242); /* Color of arrow */
+    transform: rotate(-45deg);
+  }
+  
