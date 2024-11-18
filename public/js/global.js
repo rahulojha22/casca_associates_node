@@ -1,4 +1,4 @@
-let services = [
+let process = [
     {name: 'US Accounting', description: 'lorem ipsum lorem ipsum lorem ipsum lorem ipsum'},
     {name: 'ABC', description: 'lorem ipsum lorem ipsum lorem ipsum lorem ipsum'},
     {name: 'XYZ ABC', description: 'lorem ipsum lorem ipsum lorem ipsum lorem ipsum'},
@@ -7,28 +7,28 @@ let services = [
 ];
 
 $(document).ready(function() {
-    console.log(services)
-    let service_sec = document.getElementById('services');
+    console.log(process)
+    let process_sec = document.getElementById('process');
     let sec_html = '';
-    services.forEach((ele, i)=>{
+    process.forEach((ele, i)=>{
         let ele_html = '';
         if(i%2===0){
-            ele_html = `<div class="service_sec_box">
-                <div class="service_content">
+            ele_html = `<div class="process_sec_box">
+                <div class="process_content">
                   ${ele.name}
                 </div>
-                <div class="service_img">
+                <div class="process_img">
                 </div>
             </div></div>`
         }else{
-            ele_html = `<div class="service_sec_box">
-                  <div class="service_img">
+            ele_html = `<div class="process_sec_box">
+                  <div class="process_img">
                   </div>
-                  <div class="service_content">
+                  <div class="process_content">
                     ${ele.name}
                 </div></div>`
         }
         sec_html += ele_html;
     });
-    service_sec.innerHTML = sec_html;
+    process_sec.innerHTML = sec_html;
 });

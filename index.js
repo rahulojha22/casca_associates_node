@@ -14,6 +14,10 @@ app.get('/', (req, res) => {
     res.render('home', { layout: false, title: 'Casca' });
 });
 
+app.get('/demo', (req, res) => {
+  res.render('demo', { layout: false, title: 'Casca' });
+});
+
 app.listen(PORT, () => {
   console.log(`Server is running on http://localhost:${PORT}`);
 });
