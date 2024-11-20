@@ -25,8 +25,22 @@
     width: 33.33%;
     padding: 20px;
 }
+.service_img{
+    width: 80%;
+    aspect-ratio: 1/1;
+}
 .service_card{
     font-size: 20px;
+    cursor: pointer;
+}
+.modal-title{
+    color: #000!important;
+}
+.modal_desc{
+    color: #000!important;
+}
+.modal_img{
+    width: 30%;
 }
 .contact_sec{
     padding: 50px 80px;
