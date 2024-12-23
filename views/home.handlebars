@@ -10,26 +10,40 @@
 </head>
 <body class="bg_black clr_white">
   <div class="top_sec">
-    <h1>Casca Associates</h1>
-    <div class="curved-line"></div>
-
+    <div class="top_container">
+      <img src="/images/casca_logo.png" name="logo" class="logo" />
+      <div>
+        <h1 class="top_title">Casca Associates</h1>
+      </div>    
+    </div>    
   </div>
+<div class="about_sec">
+	<div class="about_heading">About Us</div>
+	<div>
+		<p>At Casca Associates, we are dedicated to delivering a diverse range of top-notch services tailored to meet the evolving needs of our clients. With a strong foundation in professionalism, expertise, and a client-first philosophy, our experienced team approaches every project with precision and unwavering commitment. From 24/7 customer support, including live chat and complaint resolution, to comprehensive financial services like bookkeeping, tax preparation, and payroll management, we ensure every solution enhances your business's operations and growth. Our data management expertise covers CRM solutions, database organization, and automated workflows designed to boost efficiency and productivity.</p>
+    <p>In addition to core business services, we specialize in creative and technical solutions. Our dubbing and voice-over services bring projects to life, while our sound design and advanced mixing and mastering ensure professional-quality audio. We also provide localization services, including translations and cultural adaptations, helping businesses connect with global audiences seamlessly. At Casca Associates, we go beyond being a service provider; we are your strategic partner, dedicated to driving excellence, fostering innovation, and empowering your business to succeed in today’s competitive landscape.</p>
+	</div>
+</div>
   <div id="services" class="service_sec">
     <div class="service_heading">
       Services
     </div>
-    <div class="service_box">
-      <div class="service_item">
-        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
-          <div class="service_card clr_white">
-            <img src="/images/img.png" width="100%" class="service_img" />
-            <p>Name</p>
-          </div>
-        </button>        
+    <div class="service_body">
+      <div class="btn_sec">
+        <button id="slideLeft" class="slide_btn"><img class="btn_larrow" src="/images/arrow.png" /></button>
+      </div>      
+      <div class="service_box" id="service_box">      
       </div>
-    </div>
+      <div class="btn_sec">
+        <button id="slideRight" class="slide_btn"><img class="btn_rarrow" src="/images/arrow.png" /></button>
+      </div>      
+    </div>    
   </div>
-  <div id="process" class="process_sec">
+  <div class="process_sec">
+    <div class="process_heading">
+      Our Process
+    </div>
+    <div id="process" class="process_box"></div>
   </div>
   <div class="contact_sec">
     <div class="contact_heading">
@@ -38,36 +52,46 @@
     <div class="contact_box">
       <div class="contact_container">
         <div class="input _field">
-          <input type="text" placeholder="Name" class="input_box" />
+          <input id="user_name" type="text" placeholder="Name*" class="input_box" />
         </div>
         <div class="input _field">
-          <input type="number" placeholder="Phone" class="input_box" />
+          <input id="user_phone" type="number" placeholder="Phone*" class="input_box" />
         </div>
         <div class="input _field">
-          <input type="email" placeholder="Email" class="input_box" />
+          <input id="user_email" type="email" placeholder="Email*" class="input_box" />
         </div>
         <div class="input _field">
-          <input type="text" placeholder="Message" class="input_box" />
+          <input id="user_message" type="text" placeholder="Message*" class="input_box" />
         </div>
-        <div class="form_button_sec">
-          <button class="btn-large waves-effect pulse">Send Message</button>
+        <div class="form_button_sec pt-4">
+          <button class="btn-large waves-effect pulse border-0" onclick="sendMail()">Send Message</button>
         </div>
       </div>
     </div>
   </div>
+  <div class="footer_sec">
+    <div class="footer_1"><img src="/images/casca_image.jpeg" alt="Name" class="footer_img_1"></div>
+    <div class="footer_2" id="footer_2"><img src="/images/casca_image.jpeg" alt="Name" class="footer_img_2"></div>
+    <div class="footer_3"><img src="/images/casca_image.jpeg" alt="Name" class="footer_img_3"></div>
+  </div>
 
+<div class="alert alert-danger alert-dismissible fade show alert_sec" role="alert" id="alert_sec">
+  <strong id="alert_text"></strong>
+  <button type="button" class="btn-close" onclick="closeAlert()"></button>
+</div>
 
 <!-- Modal -->
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-lg">
+  <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <img src="/images/img.png" class="modal_img" />
-        <p class="modal_desc">Name</p>
+      <div class="modal-body modal_body">
+        <div class="modal_heading">
+          <div id="service_name" class="modal_title">            
+          </div>
+        </div>
+        <div class="modal_desc">
+          <p id="service_desc" class="modal_desc"></p>
+        </div>        
       </div>
     </div>
   </div>

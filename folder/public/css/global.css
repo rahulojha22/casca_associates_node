@@ -1,0 +1,187 @@
+.bg_black{
+    background-color: #000;
+}
+.clr_white{
+    color: #FFFFFF;
+}
+.top_sec{
+    padding: 200px 80px;
+    text-align: end;
+    font-size: 50px;
+}
+.service_sec{
+    padding: 50px 80px;
+    font-size: 50px;
+}
+.service_heading{
+    text-align: center;
+}
+.service_box{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.service_item{
+    width: 25%;
+    padding: 20px;
+    border-radius: 10px;
+display: flex;
+justify-content: center;
+}
+.service_btn{
+width: 80%;
+}
+.service_title{
+	padding-top: 20px;
+}
+.service_img{
+    width: 100%;
+    aspect-ratio: 1/1;
+border-radius: 10px;
+}
+.service_img:hover{
+    width: 102%;
+    z-index: 9;
+    box-shadow: 0px 0px 8px 17px #bfbfbf29;
+}
+.service_card{
+width:100%;
+    font-size: 20px;
+    cursor: pointer;
+display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.modal-title{
+    color: #000!important;
+}
+.modal_desc{
+    color: #000!important;
+}
+.modal_img{
+    width: 30%;
+}
+.contact_sec{
+    padding: 50px 80px;
+    font-size: 50px;
+}
+.contact_heading{
+    text-align: center;
+}
+.contact_box{
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+}
+.contact_container{
+    width: 50%;
+    padding: 50px;
+    border-radius: 20px;
+    background-color: rgb(255 255 255 / 7%);
+    box-shadow: 2px 4px 12px rgb(0 0 0 / 8%);
+    backdrop-filter: saturate(180%) blur(20px);
+}
+.input_box{
+    background-color: rgba(255, 255, 255, 0.05);
+    border: none;
+    border-radius: 8px;
+    height: 3rem;
+    width: calc(100% - 24px);
+    font-size: 16px;
+    margin: 0 0 8px 0;
+    padding: 0 12px;
+    transition: box-shadow .3s, border .3s, -webkit-box-shadow .3s;
+    box-shadow: none;
+    outline: none;
+    color: #fff;
+}
+.form_button_sec{
+    display: flex;
+    justify-content: center;
+}
+.btn-large {
+    height: 54px;
+    line-height: 54px;
+    font-size: 15px;
+    padding: 0 28px;
+    border-radius: 27px;
+}
+.waves-effect {
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+    overflow: hidden;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+    vertical-align: middle;
+    z-index: 1;
+    -webkit-transition: .3s ease-out;
+    transition: .3s ease-out;
+}
+.pulse {
+    overflow: visible;
+    position: relative;
+}
+.pulse::before{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: inherit;
+    border-radius: inherit;
+    -webkit-transition: opacity .3s, -webkit-transform .3s;
+    transition: opacity .3s, -webkit-transform .3s;
+    transition: opacity .3s, transform .3s;
+    transition: opacity .3s, transform .3s, -webkit-transform .3s;
+    -webkit-animation: pulse-animation 1s cubic-bezier(0.24, 0, 0.38, 1) infinite;
+    animation: pulse-animation 1s cubic-bezier(0.24, 0, 0.38, 1) infinite;
+    z-index: -1;
+}
+.process_sec{
+    padding: 50px 80px;
+    font-size: 50px;
+}
+.process_sec_box{
+    width: 100%;
+    padding: 20px 0px;
+    display: flex;    
+}
+.process_content{
+    width: 70%;
+}
+.process_img{
+    width: 30%;
+    aspect-ratio: 1/1;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+}
+.curved-line {
+    width: 200px;
+    height: 100px;
+    border: 2px dotted rgb(246, 245, 245);
+    border-radius: 50%; /* creates the curve */
+    border-top: none;
+    border-right: none;
+    position: relative;
+  }
+  
+  /* Add an arrow using a pseudo-element */
+  .curved-line::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    border: 5px solid transparent;
+    border-left-color: rgb(247, 242, 242); /* Color of arrow */
+    transform: rotate(-45deg);
+  }
+  ::placeholder {
+    color: #fff;
+    opacity: 0.7;
+  }
